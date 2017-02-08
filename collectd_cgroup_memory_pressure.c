@@ -26,7 +26,7 @@ int main(int argc, char **argv)
 	char line[LINE_MAX];
 	int ret;
 
-	if (argc != 5) errx(1, "%s", USAGE_STR);
+	if (argc != 4) errx(1, "%s", USAGE_STR);
 
         char* interval_time_str = getenv("COLLECTD_INTERVAL");
         int interval_time = (interval_time_str != NULL)
